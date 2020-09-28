@@ -9,9 +9,7 @@ import './FileUpload.scss';
 // Declared to keep Form.File and Mimetype validation consistent
 const ValidMimetype = "text/plain";
 
-export default function FileUpload({ parseTextFile }) {
-
-    const [validationError, setValidationError] = useState("");
+export default function FileUpload({ parseTextFile, validationError, setValidationError }) {
 
     const fileInput = React.createRef()
 

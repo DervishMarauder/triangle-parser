@@ -14,6 +14,7 @@ function App() {
   const [parsedResult, setParsedResult] = useState();
 
   const [loading, setLoading] = useState(false);
+  const [validationError, setValidationError] = useState("");
 
   const clearParsedResult = () => {
     setParsedResult(null);
@@ -53,7 +54,7 @@ function App() {
     }
 
     // Default state, allow user to submit a file to be parsed.
-    return <FileUpload parseTextFile={parseTextFile} />
+    return <FileUpload parseTextFile={parseTextFile} validationError={validationError} setValidationError={setValidationError} />
 
   }
 

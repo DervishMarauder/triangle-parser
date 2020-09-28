@@ -8,7 +8,7 @@ export default function ParsedResultDisplayDetails({ parsedResult }) {
     const lineRow = (line, index) => {
 
         const lineNumber = index + 1;
-        const highestValue = line.getHighestValue();
+        const highestValue = line.highestValue;
 
         return (
             <tr key={lineNumber}>

@@ -22,9 +22,7 @@ export default function ParsedResultDisplay({ parsedResult, clearParsedResult })
                     <h1> Result</h1>
                 </div>    
                 <dl className="row">
-                    { detailRow("Maximum total", parsedResult.getMaximumTotal()) }
-                    { detailRow("Considered lines", parsedResult.getValidLineCount()) }
-                    { detailRow("File lines", parsedResult.getLineCount()) }
+                    { detailRow("Maximum total", parsedResult.maximumTotal) }
                 </dl>
             </div>
             <div>
